@@ -1,0 +1,33 @@
+tout en console:
+mkdir monPremierRepo
+#créer le dossier du repository
+#créer ou mettre un fichier dans ce dossier
+
+git add . 
+#pour ajouter tous les fichiers du repository à l'index de git
+#ou alors faire juste: git add nomDuFichier.txt
+
+git commit -m "message qui décrit le commit"
+#enregistre une étape de modification du repository avec un message en description
+
+git log
+#pour voir la liste de tous les commit
+
+git commit -a -m "message qui décrit la mise à jour"
+#enregistre un commit où aucun nouveau fichier n'a été ajouté, seuls les fichiers existants ont été modifiés
+
+git checkout SHADuCommit
+#pour revenir en arrière sur un commit précis
+
+git checkout master
+#pour revenir sur l'état actuel
+
+git commit --amend -m "Votre nouveau message"
+#pour modifier le message d'un commit
+
+git reset --hard‌
+#pour annuler tous les changements avant d'avoir fait un commit
+
+git clone lienFourniParGitHub 
+#pour récupérer sur son ordi un repository hébergé sur github
+
