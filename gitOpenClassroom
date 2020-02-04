@@ -31,3 +31,29 @@ git reset --hard‌
 git clone lienFourniParGitHub 
 #pour récupérer sur son ordi un repository hébergé sur github
 
+git branch nom_dela_branche
+#pour créer une nouvelle branche
+
+git checkout nom_dela_branche
+#pour se placer dans la nouvelle branche
+
+git checkout -b nom_dela_branche
+#pour créer une branche et se placer (gagne du temps)
+
+git checkout brancheA
+git merge brancheB
+#pour fusionner la brancheB dans la brancheA
+
+git checkout master
+git merge brancheB
+#pour fusionner la brancheB avec le projet principal
+
+git commit
+#pour indiquer à git que les conflits ont été réglé après une fusion
+
+git mergetool tortoisemerge
+#pour utiliser un outil externe (tortoisemerge) pour résoudre des conflits
+
+git blame nomdufichier.txt
+#pour voir toutes les modifications faites sur un fichier
+
