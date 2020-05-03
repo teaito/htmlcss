@@ -3,6 +3,9 @@ mkdir monPremierRepo
 #créer le dossier du repository
 #créer ou mettre un fichier dans ce dossier
 
+git init
+#Pour activer un dossier comme repository Git
+
 git add . 
 #pour ajouter tous les fichiers du repository à l'index de git
 #ou alors faire juste: git add nomDuFichier.txt
