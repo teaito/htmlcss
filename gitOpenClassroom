@@ -66,3 +66,16 @@ git mergetool tortoisemerge
 git blame nomdufichier.txt
 #pour voir toutes les modifications faites sur un fichier
 
+#Créez le fichier .gitignore pour y lister les fichiers que vous ne voulez pas versionner dans Git
+
+git stash
+#pour mettre de côté vos modifications en cours
+
+git stash pop
+#pour récupérer les modifications que vous aviez mises de côté
+
+git push origin nouvelle_branche
+#pour envoyer vos modifications sur GitHub en faisant un git push de votre nouvelle branche 
+#puis aller sur github et se mettre dans la nouvelle branche envoyée
+clic  sur compare & pull request
+# puis rédiger un message pour présenter votre proposition de modifications à l'auteur du projet
