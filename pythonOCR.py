@@ -41,9 +41,40 @@ type (variable)
 print (variable)
 #pour afficher
 
-si a > 0 :
+if a > 0 :
     print (« a est positif »)
 elif a = 0 :
     print (« a est nul »)
 else :
     print(« a est négatif »)
+    
+True, False
+# 1ère lettre en majuscule
+
+and, or, not
+
+a=0
+while a<10:
+    a+=1
+#crtl C pour sortir d'une boucle infinie
+
+chaine = "Bonjour les ZER0S"
+for lettre in chaine:
+    print(lettre)
+
+in
+if lettre in "AEIOUYaeiouy": 
+        print(lettre)
+
+break
+#pour sortir d'une boucle
+
+continue
+#pour revenir directement au début de la boucle
+
+def nomDeFonction (paramètre):
+    print("hello")
+#pour définir une fonction
+
+def table(nb, max=10):
+#valeur par défault pour le paramètre max
