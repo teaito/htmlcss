@@ -74,7 +74,55 @@ continue
 
 def nomDeFonction (paramètre):
     print("hello")
+    return True
 #pour définir une fonction
 
 def table(nb, max=10):
 #valeur par défault pour le paramètre max
+
+def nomFonction ():
+    """ aide pour cette fonction """
+#docstring visible en tapant help(nomFonction)
+
+variable = lambda x, y: x + y
+print (variable(2,3))
+#affiche 5
+#lambda est une fonction sur une seule ligne
+
+import math
+math.sqrt(16)
+#affiche 4
+#importation de module et appel d'une fonction
+
+help("math.sqrt")
+#pour avoir la description de cette fonction
+
+import math as mathematiques
+mathematiques.sqrt(25)
+#changement de l'espace de nom
+
+from math import sqrt
+sqrt(16)
+#affiche 4
+
+from math import *
+#pour importer toutes les fonctions de ce module
+#attention aux noms des fonctions avec vos propres fonctions
+
+#début de module mettre une docstring aussi
+
+if __name__ == "__main__":
+    table(4)
+#à mettre dans un module, permet de faire des tests des fonctions du module qui ne fonctionnent pas quand il est importé mais seulement quand elles sont appelées quand on lance directement le module
+    
+#un module contient des fonctions et des class, un package contient des modules ou d'autres packages
+    
+from package.sousPackage import module
+#nommage comme une variable (minuscule puis CamelCase)
+    
+from package.fonctions import table
+table(5) # Appel de la fonction table
+
+# Ou ...
+import package.fonctions
+package.fonctions.table(5)  # Appel de la fonction table
