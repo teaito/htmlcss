@@ -126,3 +126,32 @@ table(5) # Appel de la fonction table
 # Ou ...
 import package.fonctions
 package.fonctions.table(5)  # Appel de la fonction table
+
+try:
+    resultat = numerateur / denominateur
+except NameError:
+    print("La variable numerateur ou denominateur n'a pas été définie.")
+except TypeError:
+    print("La variable numerateur ou denominateur possède un type incompatible avec la division.")
+#pour gérer les exceptions et éviter au programme de planter
+except type_de_l_exception as exception_retournee:
+    print("Voici l'erreur :", exception_retournee)
+else:
+    print("dans le cas où il n'y a pas d'erreur")
+finally:
+    # Instruction(s) exécutée(s) qu'il y ait eu des erreurs ou non
+    pass
+    #permet de faire un bloc try vide
+
+assert variable
+assert variable == valeur
+#si la variable ou le test vaut True rien ne se passe, si elle vaut False, une exception AssertionError est levée
+try:
+    x = 2
+    assert x==3
+except AssertionError:
+    print ("x 'nest pas égal à 3")
+
+raise TypeDeLException("message à afficher")
+
+
